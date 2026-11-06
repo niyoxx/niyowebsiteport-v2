@@ -2,28 +2,41 @@ import { RevealOnScroll } from "../components/RevealOnScroll"
 
 export const AboutPage = () => {
 
-    const frontendSkills = [
-        { name: "React", level: 90 },
-        { name: "JavaScript", level: 85 },
-        { name: "HTML", level: 95 },
-        { name: "CSS", level: 90 }
+    const languageSkills = [
+        "Java", "JavaScript (ES6+)", "C#", "Python", "SQL", "HTML5", "CSS3"
     ]
 
-    const backendSkills = [
-        { name: "Java", level: 85 },
-        { name: "SpringBoot", level: 80 },
-        { name: "Node.JS", level: 75 },
-        { name: "Python", level: 70 },
-        { name: "PostgreSQL", level: 80 }
+    const frameworkSkills = [
+        "React", "ASP.NET MVC", "Backbone.js", "Spring Boot", "Node.js", "Express", "Tailwind CSS", "Vite"
     ]
 
     const toolsSkills = [
-        "Vite",
-        "VSCode",
-        "Eclipse",
-        "Bootstrap",
-        "Git",
-        "Tailwind CSS"
+        "MongoDB", "PostgreSQL", "Git/GitHub", "Azure DevOps", "Postman", "JUnit", "Docker", "Vercel", "Railway"
+    ]
+
+    const experience = [
+        {
+            role: "Software Engineer Intern",
+            org: "Ensora Health",
+            period: "June 2026 – August 2026",
+            points: [
+                "Migrated 5+ legacy Backbone.js/jQuery pages (login, signature capture, intake forms, password recovery) to React inside a .NET/ASP.NET MVC product, building the first React/webpack toolchain from scratch",
+                "Built a custom navigation bar on the internal design system with permission-based routing and live API-driven notification counts",
+                "Resolved production defects across React, ASP.NET MVC, MongoDB and Azure DevOps CI/CD; replaced inefficient Count() calls with CountDocumentsAsync()",
+                "Delivered a React acceptance-workflow feature in an Agile/Scrum team"
+            ]
+        },
+        {
+            role: "Full-Stack Engineer",
+            org: "Eunoia - Mental Wellness Platform",
+            period: "May 2025 – January 2026",
+            points: [
+                "Designed, built and deployed a platform serving 100+ active users with React, Spring Boot and PostgreSQL",
+                "Implemented secure authentication with JWT, OAuth and Spring Security",
+                "Built a responsive, mobile-first UI with React and Tailwind CSS",
+                "Deployed on Vercel and Railway with automated CI/CD, monitoring and logging; wrote JUnit tests"
+            ]
+        }
     ]
 
     const certSkills = [
@@ -57,7 +70,7 @@ export const AboutPage = () => {
                             About Me
                         </h2>
                         <p className="text-gray-400 max-w-2xl mx-auto">
-                            Passionate developer dedicated to creating impactful solutions
+                            Full-stack engineer building production software with React, Spring Boot and .NET
                         </p>
                     </div>
 
@@ -72,10 +85,9 @@ export const AboutPage = () => {
                                     </svg>
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-bold mb-2 text-white">Extremely Passionate Developer</h3>
+                                    <h3 className="text-xl font-bold mb-2 text-white">Full-Stack Engineer & CS Student</h3>
                                     <p className="text-gray-300 leading-relaxed">
-                                        I'm willing to learn and impact the world with technology. My journey in software development 
-                                        is driven by curiosity and a desire to create meaningful solutions that make a difference.
+                                        I'm a Computer Science student at St. John's University and a full-stack developer who loves learning and building meaningful solutions with technology.
                                     </p>
                                 </div>
                             </div>
@@ -94,22 +106,16 @@ export const AboutPage = () => {
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                         </svg>
                                     </div>
-                                    <h3 className="text-xl font-bold text-white">Frontend</h3>
+                                    <h3 className="text-xl font-bold text-white">Languages</h3>
                                 </div>
-                                <div className="space-y-4">
-                                    {frontendSkills.map((skill, index) => (
-                                        <div key={index}>
-                                            <div className="flex justify-between mb-2">
-                                                <span className="text-sm font-medium text-gray-300">{skill.name}</span>
-                                                <span className="text-sm text-blue-400">{skill.level}%</span>
-                                            </div>
-                                            <div className="w-full h-2 bg-white/5 rounded-full overflow-hidden">
-                                                <div 
-                                                    className="h-full bg-gradient-to-r from-blue-500 to-cyan-400 rounded-full transition-all duration-1000 ease-out"
-                                                    style={{ width: `${skill.level}%` }}
-                                                ></div>
-                                            </div>
-                                        </div>
+                                <div className="flex flex-wrap gap-2">
+                                    {languageSkills.map((skill, index) => (
+                                        <span
+                                            key={index}
+                                            className="bg-blue-500/10 text-blue-400 py-2 px-4 rounded-full text-sm border border-blue-500/20 hover:bg-blue-500/20 hover:border-blue-400/40 hover:shadow-[0_2px_10px_rgba(59,130,246,0.3)] hover:-translate-y-0.5 transition-all duration-200"
+                                        >
+                                            {skill}
+                                        </span>
                                     ))}
                                 </div>
                             </div>
@@ -125,22 +131,16 @@ export const AboutPage = () => {
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
                                         </svg>
                                     </div>
-                                    <h3 className="text-xl font-bold text-white">Backend</h3>
+                                    <h3 className="text-xl font-bold text-white">Frameworks & Libraries</h3>
                                 </div>
-                                <div className="space-y-4">
-                                    {backendSkills.map((skill, index) => (
-                                        <div key={index}>
-                                            <div className="flex justify-between mb-2">
-                                                <span className="text-sm font-medium text-gray-300">{skill.name}</span>
-                                                <span className="text-sm text-blue-400">{skill.level}%</span>
-                                            </div>
-                                            <div className="w-full h-2 bg-white/5 rounded-full overflow-hidden">
-                                                <div 
-                                                    className="h-full bg-gradient-to-r from-blue-500 to-cyan-400 rounded-full transition-all duration-1000 ease-out"
-                                                    style={{ width: `${skill.level}%` }}
-                                                ></div>
-                                            </div>
-                                        </div>
+                                <div className="flex flex-wrap gap-2">
+                                    {frameworkSkills.map((skill, index) => (
+                                        <span
+                                            key={index}
+                                            className="bg-blue-500/10 text-blue-400 py-2 px-4 rounded-full text-sm border border-blue-500/20 hover:bg-blue-500/20 hover:border-blue-400/40 hover:shadow-[0_2px_10px_rgba(59,130,246,0.3)] hover:-translate-y-0.5 transition-all duration-200"
+                                        >
+                                            {skill}
+                                        </span>
                                     ))}
                                 </div>
                             </div>
@@ -157,7 +157,7 @@ export const AboutPage = () => {
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                                         </svg>
                                     </div>
-                                    <h3 className="text-xl font-bold text-white">Tools & Frameworks</h3>
+                                    <h3 className="text-xl font-bold text-white">Databases & Tools</h3>
                                 </div>
                                 <div className="flex flex-wrap gap-2">
                                     {toolsSkills.map((tool, index) => (
@@ -199,6 +199,28 @@ export const AboutPage = () => {
                         </div>
                     </div>
 
+                    {/* Experience Section */}
+                    <div className="relative group mb-12">
+                        <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-cyan-400/10 rounded-2xl blur-xl"></div>
+                        <div className="relative p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm hover:border-blue-500/30 transition-all duration-300">
+                            <h3 className="text-xl font-bold text-white mb-6">Work Experience</h3>
+                            <div className="space-y-6">
+                                {experience.map((job, index) => (
+                                    <div key={index} className="flex items-start">
+                                        <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                                        <div>
+                                            <h4 className="text-lg font-semibold text-white">{job.role} · {job.org}</h4>
+                                            <p className="text-sm text-gray-500 mb-2">{job.period}</p>
+                                            <ul className="list-disc pl-5 space-y-1 text-sm text-gray-400 leading-relaxed">
+                                                {job.points.map((point, i) => <li key={i}>{point}</li>)}
+                                            </ul>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+
                     {/* Education Section */}
                     <div className="relative group">
                         <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-cyan-400/10 rounded-2xl blur-xl"></div>
@@ -218,18 +240,16 @@ export const AboutPage = () => {
                                     <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-4 flex-shrink-0"></div>
                                     <div>
                                         <h4 className="text-lg font-semibold text-white mb-1">
-                                            B.S. in Computer Science
+                                            B.S. in Computer Science (Accelerated B.S./M.S. Program)
                                         </h4>
-                                        <p className="text-gray-400 mb-2">St. John's University, Queens, NY</p>
-                                        <p className="text-sm text-gray-500">2023 - Present</p>
+                                        <p className="text-gray-400 mb-2">St. John's University, Queens, NY &bull; GPA 3.54/4.0</p>
+                                        <p className="text-sm text-gray-500">Expected Graduation: May 2027</p>
                                     </div>
                                 </div>
                                 <div className="pl-6 border-l-2 border-white/10">
                                     <p className="text-sm font-medium text-gray-300 mb-2">Relevant Coursework:</p>
                                     <p className="text-sm text-gray-400 leading-relaxed">
-                                        Computer Fundamentals, Data Structures & Algorithms, Software Design Methods, Advanced
-Data Structures, Networking, Theory of Programming Languages, Data Security & Cryptography, Computer
-Architecture, Database Management Systems
+                                        AI Foundations and Machine Learning (Graduate), Algorithm and Theory of Computation (Graduate), Data Structures & Algorithms, Advanced Data Structures, Software Design Methods, Database Management Systems, Computer Architecture, Networking, Theory of Programming Languages, Data Security & Cryptography, Software Engineering
                                     </p>
                                 </div>
                             </div>

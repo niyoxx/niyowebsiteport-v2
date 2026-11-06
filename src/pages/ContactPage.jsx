@@ -54,7 +54,7 @@ export const ContactPage = () => {
                             Get In Touch
                         </h2>
                         <p className="text-gray-400 max-w-xl mx-auto">
-                            Have a project in mind or want to collaborate? I'd love to hear from you!
+                            Looking for internships and full-time opportunities. Have a project in mind or want to collaborate? I'd love to hear from you!
                         </p>
                     </div>
 
@@ -207,6 +207,19 @@ export const ContactPage = () => {
                                 <h3 className="text-sm font-medium text-gray-400">GitHub</h3>
                                 <a href="https://github.com/niyoxx" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors">
                                     github.com/niyoxx
+                                </a>
+                            </div>
+                        </div>
+                        <div className="flex items-center p-4 bg-white/5 border border-white/10 rounded-xl hover:border-blue-500/30 hover:bg-blue-500/5 transition-all duration-300 group md:col-span-2">
+                            <div className="w-12 h-12 flex items-center justify-center rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 mr-4 group-hover:scale-110 transition-transform">
+                                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 className="text-sm font-medium text-gray-400">LinkedIn</h3>
+                                <a href="https://www.linkedin.com/in/niyontsinziwhite/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors">
+                                    linkedin.com/in/niyontsinziwhite
                                 </a>
                             </div>
                         </div>

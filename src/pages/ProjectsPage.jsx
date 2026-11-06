@@ -4,17 +4,34 @@ export const ProjectsPage = () => {
 
     const projects = [
         {
+            title: "Job Application Tracker",
+            description: "Tracks internship pipelines and uses Google Gemini AI to extract company, role and requirements from job posting URLs. Secure Express.js proxy keeps API keys safe, with retry logic, error handling and logging. Includes status tracking, filtering and an analytics dashboard; serving 50+ users.",
+            tech: ["React", "JavaScript", "Express", "Gemini AI", "Vercel", "Render"],
+            link: "https://job-tracker-wheat-two.vercel.app/",
+            repo: "https://github.com/niyoxx/job-tracker",
+            gradient: "from-blue-500 to-cyan-400"
+        },
+        {
             title: "Eunoia",
-            description: "Developed a full-stack mental health application with a clean, intuitive user interface using React.js and built a scalable and maintainable backend with Java and Spring Boot capable of handling various types of user requests.",
-            tech: ["React", "Java", "JavaScript", "SpringBoot", "PostgreSQL"],
-            link: "https://eunoia-frontend-new.vercel.app/",
+            description: "Full-stack mental wellness platform serving 100+ active users. React frontend, Spring Boot backend and PostgreSQL, with JWT, OAuth and Spring Security for authentication, a mobile-first Tailwind UI, and CI/CD on Vercel and Railway.",
+            tech: ["React", "Spring Boot", "PostgreSQL", "JWT", "OAuth", "Tailwind CSS"],
+            link: "https://eunoia-frontend-new.vercel.app/eunoia",
+            gradient: "from-cyan-400 to-blue-500"
+        },
+        {
+            title: "House Price Prediction (Ames Housing)",
+            description: "End-to-end regression pipeline on 1,460 homes and 79 features. Compared 6 models with 5-fold cross-validation and GridSearchCV; tuned gradient boosting cut error from ~39% (mean baseline) to ~14% (about $15K average error), using Pipelines to prevent data leakage.",
+            tech: ["Python", "pandas", "scikit-learn", "Jupyter"],
+            link: "https://github.com/niyoxx/house-price-prediction",
+            isRepo: true,
             gradient: "from-blue-500 to-cyan-400"
         },
         {
             title: "Fixnex",
-            description: "Developed a personal finance tracker that can help you manage and save your money. Implemented reusable components and styling using Tailwind CSS for a modern, responsive user experience.",
+            description: "Personal finance tracker that helps you manage and save your money, built with reusable components and Tailwind CSS for a modern, responsive experience.",
             tech: ["React", "JavaScript", "Tailwind CSS"],
             link: "https://niyoxx.github.io/fixnex-frontend/",
+            repo: "https://github.com/niyoxx/fixnex-frontend",
             gradient: "from-cyan-400 to-blue-500"
         }
     ];
@@ -75,7 +92,7 @@ export const ProjectsPage = () => {
                                             target="_blank"
                                             rel="noopener noreferrer"
                                         >
-                                            <span>View Project</span>
+                                            <span>{project.isRepo ? "View Source" : "View Project"}</span>
                                             <svg
                                                 className="w-4 h-4 ml-2 group-hover/link:translate-x-1 transition-transform"
                                                 fill="none"
@@ -86,9 +103,10 @@ export const ProjectsPage = () => {
                                             </svg>
                                         </a>
 
+                                        {project.repo && (
                                         <a
                                             className="w-8 h-8 flex items-center justify-center rounded-full bg-white/5 border border-white/10 text-gray-400 hover:text-blue-400 hover:border-blue-400/50 hover:bg-blue-500/10 transition-all duration-300"
-                                            href={project.link}
+                                            href={project.repo}
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             aria-label="GitHub"
@@ -97,6 +115,7 @@ export const ProjectsPage = () => {
                                                 <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                                             </svg>
                                         </a>
+                                        )}
                                     </div>
                                 </div>
                             </div>

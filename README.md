@@ -1,12 +1,22 @@
-# React + Vite
+# niyo white | portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+hey, i'm niyo. i'm a full-stack software engineer and a computer science student at st. john's university. this is my personal portfolio, where you can see what i've built, what i've worked on, and how to reach me.
 
-Currently, two official plugins are available:
+live site: https://niyoxx.github.io/niyowebsiteport-v2/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## what's on here
 
-## Expanding the ESLint configuration
+- **home**: quick intro
+- **about**: my skills, experience, education and certs
+- **projects**: stuff i've built like my job application tracker, eunoia, a house price predictor and fixnex
+- **contact**: send me a message or find me on linkedin and github
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## built with
+
+react, vite, tailwind css, and emailjs for the contact form. hosted on github pages.
+
+## reach me
+
+- email: niyontsinziwhite@gmail.com
+- linkedin: https://www.linkedin.com/in/niyontsinziwhite/
+- github: https://github.com/niyoxx
