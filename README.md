@@ -1,22 +1,22 @@
-# niyo white | portfolio
+# Niyo White | Portfolio
 
-hey, i'm niyo. i'm a full-stack software engineer and a computer science student at st. john's university. this is my personal portfolio, where you can see what i've built, what i've worked on, and how to reach me.
+Hey, I'm Niyo! I'm a full-stack software engineer and a Computer Science student at St. John's University. Welcome to my personal portfolio, where you can see what I've built, what I've worked on, and how to reach me.
 
-live site: https://niyoxx.github.io/niyowebsiteport-v2/
+**Live Site:** https://niyoxx.github.io/niyowebsiteport-v2/
 
-## what's on here
+## What's On Here
 
-- **home**: quick intro
-- **about**: my skills, experience, education and certs
-- **projects**: stuff i've built like my job application tracker, eunoia, a house price predictor and fixnex
-- **contact**: send me a message or find me on linkedin and github
+- **Home:** A quick intro
+- **About:** My skills, experience, education, and certifications
+- **Projects:** Things I've built, like my Job Application Tracker, Eunoia, a House Price Predictor, and Fixnex
+- **Contact:** Send me a message or find me on LinkedIn and GitHub
 
-## built with
+## Built With
 
-react, vite, tailwind css, and emailjs for the contact form. hosted on github pages.
+React, Vite, Tailwind CSS, and EmailJS for the contact form. Hosted on GitHub Pages.
 
-## reach me
+## Reach Me
 
-- email: niyontsinziwhite@gmail.com
-- linkedin: https://www.linkedin.com/in/niyontsinziwhite/
-- github: https://github.com/niyoxx
+- **Email:** niyontsinziwhite@gmail.com
+- **LinkedIn:** https://www.linkedin.com/in/niyontsinziwhite/
+- **GitHub:** https://github.com/niyoxx
